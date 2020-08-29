@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Login | Kyu-sinsa</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="login.css">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <div class="outline">
+        
+            <div class="login-main">
+                <a href="index.html" style=" text-decoration: none;"><div style="color:black; font-size: 4rem; font-weight: 800;">KYU-SINSA</div></a>
+                <div style="font-size: 2rem; font-weight: 500;">Login</div>
+            </div>
+
+            <form action="http://localhost/login.php" class="id-pw" method="post">
+                <input type="text" class="id" autofocus placeholder="아이디를 입력해주세요" name="id">
+                <input type="password" class="pw" placeholder="비밀번호" name="pw">
+                <input type="submit" id="login-button" class="login" value="Login">
+            </form>
+            
+
+            <div class="login-sub">
+                <a href="./join"><button>회원가입</button></a>
+                <a href="./find-id"><button>아이디 찾기</button></a>
+                <a href="./find-pw"><button>비밀번호 찾기</button></a>
+            </div>
+        </div>
+        <script src="login.js" async defer></script>
+    </body>
+</html>
